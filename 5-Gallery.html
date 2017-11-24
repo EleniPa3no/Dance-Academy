@@ -1,0 +1,387 @@
+<html>
+	<head> 
+		<title>Discover Dance</title>
+		<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>jori gallery</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+	<link rel="stylesheet" href="css/main.css">
+	<link href="css/custom.css" rel="stylesheet">
+	  
+	<script src="//use.edgefonts.net/bebas-neue.js"></script>
+
+	<!-- Custom Fonts & Icons -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/icomoon-social.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
+	<script src='//production-assets.codepen.io/assets/editor/live/console_runner-079c09a0e3b9ff743e39ee2d5637b9216b3545af0de366d4b9aad9dc87e26bfd.js'></script><script src='//production-assets.codepen.io/assets/editor/live/events_runner-73716630c22bbc8cff4bd0f07b135f00a0bdc5d14629260c3ec49e5606f98fdd.js'></script><script src='//production-assets.codepen.io/assets/editor/live/css_live_reload_init-2c0dc5167d60a5af3ee189d570b1835129687ea2a61bee3513dee3a50c115a77.js'></script><meta charset='UTF-8'><meta name="robots" content="noindex"><link rel="shortcut icon" type="image/x-icon" href="//production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" /><link rel="mask-icon" type="" href="//production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" /><link rel="canonical" href="https://codepen.io/ariona/pen/KrRogZ?depth=everything&limit=all&order=popularity&page=67&q=image&show_forks=false" /> 
+	<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css'><link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css'>
+<style class="cp-pen-styles">@import "https://fonts.googleapis.com/css?family=Josefin+Slab";>
+		h1{	text-align:center;
+			font-family: Monotype Corsiva;
+		}
+		.bg-grey {
+      		background-color: #f6f6f6;
+  		}
+		.thumbnail {
+      		padding: 0 0 15px 0;
+		    border: none;
+		    border-radius: 0;
+  		}
+	  .thumbnail img {
+	       width: 350px;
+	       height: 350px;
+	       margin-bottom: 10px;
+	  }
+	  .scroll-top-wrapper {
+			    position: fixed;
+				opacity: 0;
+				visibility: hidden;
+				overflow: hidden;
+				text-align: center;
+				z-index: 99999999;
+			    background-color: #777777;
+				color: #eeeeee;
+				width: 50px;
+				height: 48px;
+				line-height: 48px;
+				right: 30px;
+				bottom: 30px;
+				padding-top: 2px;
+				border-top-left-radius: 10px;
+				border-top-right-radius: 10px;
+				border-bottom-right-radius: 10px;
+				border-bottom-left-radius: 10px;
+				-webkit-transition: all 0.5s ease-in-out;
+				-moz-transition: all 0.5s ease-in-out;
+				-ms-transition: all 0.5s ease-in-out;
+				-o-transition: all 0.5s ease-in-out;
+				transition: all 0.5s ease-in-out;
+			}
+
+		.scroll-top-wrapper:hover {
+			background-color: #888888;
+		}
+
+		.scroll-top-wrapper.show {
+			visibility:visible;
+			cursor:pointer;
+			opacity: 1.0;
+		}
+
+			.scroll-top-wrapper i.fa {
+				line-height: inherit;
+			}
+ 
+
+ body {
+  font-family: "Josefin Slab";
+  height: 100vh;
+  background-color: #222;
+}
+
+.section-project {
+  padding: 50px 0;
+  position: relative;
+  background-color: #222;
+}
+
+.section__title, .section__subtitle {
+  text-align: center;
+  color: white;
+  display: block;
+}
+
+.section__title {
+  font-size: 3em;
+  line-height: 1;
+  margin: 0 0 20px;
+}
+
+.section__subtitle {
+  font-size: 1.2em;
+  line-height: 1.5;
+  opacity: .5;
+}
+.section__subtitle a {
+  color: inherit;
+}
+
+.project-carousel {
+  position: relative;
+  padding: 50px 0;
+}
+
+.project-strip {
+  margin: 150px 0 150px;
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+.project-strip .project {
+  cursor: pointer;
+}
+.project-strip img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.project-screen {
+  width: 768px;
+  height: 451px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.project-screen .project-detail {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 578px;
+  height: 361px;
+  margin: 32px auto 0;
+  z-index: 1;
+  background-color: #333;
+}
+.project-screen .screen-frame {
+  content: " ";
+  width: 768px;
+  height: 451px;
+  position: absolute;
+  background-image: url("https://dl.dropboxusercontent.com/u/26808427/cdn/experiments/training/macbook-frame.png");
+  background-repeat: no-repeat;
+}
+.project-screen .project {
+  margin-right: -100%;
+  float: left;
+  cursor: move;
+}
+		</style>
+
+		<link rel="stylesheet" id="font-awesome-css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" type="text/css" media="screen">
+	</head>
+	<body >
+		<div class="section section-project">
+  <h2 class="section__title">Catching the moments</h2>
+  <div class="project-carousel">
+    <div class="project-strip">
+      <div class="project"><img src="http://unsplash.it/578/360/?image=26&blur" alt=""/></div>
+      <div class="project"><img src="http://unsplash.it/578/360/?image=39&blur" alt=""/></div>
+      <div class="project"><img src="http://unsplash.it/578/360/?image=52&blur" alt=""/></div>
+      <div class="project"><img src="http://unsplash.it/578/360/?image=65&blur" alt=""/></div>
+      <div class="project"><img src="http://unsplash.it/578/360/?image=78&blur" alt=""/></div>
+      <div class="project"><img src="http://unsplash.it/578/360/?image=91&blur" alt=""/></div>
+      <div class="project"><img src="http://unsplash.it/578/360/?image=104&blur" alt=""/></div>
+      <div class="project"><img src="http://unsplash.it/578/360/?image=117&blur" alt=""/></div>
+      <div class="project"><img src="http://unsplash.it/578/360/?image=130&blur" alt=""/></div>
+    </div>
+    <div class="project-screen">
+      <div class="project-detail">
+        <div class="project"><img src="pic2.jpg" alt=""/></div>
+        <div class="project"><img src="pic3.jpg" alt=""/></div>
+        <div class="project"><img src="pic4.jpg" alt=""/></div>
+        <div class="project"><img src="pic5.jpg" alt=""/></div>
+        <div class="project"><img src="pic6.jpg" alt=""/></div>
+        <div class="project"><img src="pic11.jpg" alt=""/></div>
+        <div class="project"><img src="pic9.jpg" alt=""/></div>
+        <div class="project"><img src="https://s19.postimg.org/te9838y0z/ballerina.jpg" alt=""/></div>
+        <div class="project"><img src="https://s19.postimg.org/ptdck2bhv/pic1.jpg" alt=""/></div>
+      </div>
+      <div class="screen-frame"></div>
+    </div>
+  </div>
+</div>
+<script src='//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js'></script><script src='https://code.jquery.com/jquery-2.2.4.min.js'></script><script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js'></script>
+<script >$(".project-detail").slick({
+	slidesToShow: 1,
+	arrows: false,
+	asNavFor: '.project-strip',
+	autoplay: true,
+	autoplaySpeed: 3000
+});
+
+$(".project-strip").slick({
+	slidesToShow: 5,
+	slidesToScroll: 1,
+	arrows: false,
+	asNavFor: '.project-detail',
+	dots: false,
+	infinite: true,
+	centerMode: true,
+	focusOnSelect: true
+});
+//# sourceURL=pen.js
+</script>
+		<!--
+		<p style="margin-left:390px;">
+		<nav class="navbar navbar-inverse" >
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>                        
+	      </button>
+	      <a href="2-aboutus.html"> <img src="https://s17.postimg.org/r398y0mj3/discover-dance.jpg" width="90" height="50"></a>
+	      
+	    </div>
+
+	    <div class="collapse navbar-collapse" id="myNavbar">
+	      <ul class="nav navbar-nav">
+	        <li class="active"><a href="1-Portfolio.html">Portfolio</a></li>
+	        <li><a href="2-aboutus.html">About Us</a></li>
+	        <li><a href="3-categories.html">Categories</a></li>
+	        <li><a href="4-Contact.php">Contact</a></li>
+	        <li><a href="5-Gallery.html">Gallery</a></li>
+	      </ul>
+	      <ul class="nav navbar-nav navbar-right">
+	        <li><a href="register.php" ><span class="glyphicon glyphicon-log-in"></span> Sign Up</a></li>
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+
+<header class="header-basic-light" style="color:#4BAF9B;">
+	<div class="header-limiter">
+		<h1> Catch the moments </h1>
+	</div>
+</header>
+		
+<div class="container-fluid text-center bg-grey">
+	  <div class="row text-center">
+	    <div class="col-sm-4">
+	      <div class="thumbnail">
+	        <img src="pic2.jpg" alt="discipline" width="400" height="300">
+	      </div>
+	    </div>
+	    <div class="col-sm-4">
+	      <div class="thumbnail">
+	        <img src="pic3.jpg" alt="Ballet" width="400" height="300">
+	      </div>
+	    </div>
+	    <div class="col-sm-4">
+	      <div class="thumbnail">
+	        <img src="pic4.jpg" alt="tango" width="400" height="300">
+	      </div>
+	    </div>
+	    <div class="col-sm-4">
+	      <div class="thumbnail">
+	        <img src="pic5.jpg" alt="tango" width="400" height="300">
+	      </div>
+	    </div>
+
+	    <div class="col-sm-4">
+	      <div class="thumbnail">
+	        <img src="pic6.jpg" alt="tango" width="400" height="300">
+	      </div>
+	    </div>
+	    <div class="col-sm-4">
+	      <div class="thumbnail">
+	        <img src="pic11.jpg" alt="tango" width="400" height="300">
+	      </div>
+	    </div>
+
+	    <div class="col-sm-4">
+	      <div class="thumbnail">
+	        <img src="pic9.jpg" alt="tango" width="400" height="300">
+	      </div>
+	    </div>
+	    <div class="col-sm-4">
+	      <div class="thumbnail">
+	        <img src="https://s19.postimg.org/te9838y0z/ballerina.jpg" alt="tango" width="400" height="300">
+	      </div>
+	    </div>
+	    <div class="col-sm-4">
+	      <div class="thumbnail">
+	        <img src="https://s19.postimg.org/ptdck2bhv/pic1.jpg" alt="tango" width="400" height="300">
+	      </div>
+	    </div>
+	  </div>
+	 </div> -->
+
+
+
+<!--
+<div class="container-fluid bg-3 text-center">    
+  <h3>Gallery</h3><br>
+  <div class="row">
+    <div class="col-sm-3">
+      <img src="pic2.jpg" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3"> 
+      <img src="pic3.jpg" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3"> 
+      <img src="pic4.jpg" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+   
+  </div>
+</div><br>
+
+<div class="container-fluid bg-3 text-center">    
+  <div class="row">
+    <div class="col-sm-3">
+      <img src="pic5.jpg" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3"> 
+      <img src="pic6.jpg" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3"> 
+      <img src="pic7.jpg" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    
+  </div>
+</div><br><br> -->
+
+
+		<!-- scrolling on top button -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<div class="scroll-top-wrapper ">
+			<span class="scroll-top-inner">
+				<i class="fa fa-2x fa-arrow-circle-up"></i>
+			</span>
+		</div>
+		
+		<script>
+			$(function(){
+			 
+				$(document).on( 'scroll', function(){
+			 
+					if ($(window).scrollTop() > 100) {
+						$('.scroll-top-wrapper').addClass('show');
+					} else {
+						$('.scroll-top-wrapper').removeClass('show');
+					}
+				});
+			 
+				$('.scroll-top-wrapper').on('click', scrollToTop);
+			});
+ 
+			function scrollToTop() {
+				verticalOffset = typeof(verticalOffset) != 'undefined' ? verticalOffset : 0;
+				element = $('body');
+				offset = element.offset();
+				offsetTop = offset.top;
+				$('html, body').animate({scrollTop: offsetTop}, 500, 'linear');
+			}
+		</script>	
+	</body>
+</html>
+	
